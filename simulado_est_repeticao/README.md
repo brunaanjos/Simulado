@@ -1,1 +1,0 @@
-# simulado_est_repeticao

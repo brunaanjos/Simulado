@@ -12,12 +12,23 @@
     */
 
     //ENTRADA
-
+    const abastecimento = Number(prompt("Qual a quantidade de vezes que o carro foi abastecido ?"))
+    
+    const km = Number(prompt("Quantos Km foram rodados ?"))
 
     //PROCESSAMENTO
 
+    let total = 0;
+    for(let contador = 1; contador <= abastecimento; contador++)
+    {
+        const valor = Number(prompt("Quanto custou o abastecimento?"));
+        total = total + valor;
+    }
 
+    const custoKm = km/total;
     //SAÍDA
 
-
+document.write(`O custo de cada ${total} de cada km foi:`)
+document.write(`O custo de cada ${valor} abastecimento foi : `)
+document.write(`A quilometragem ${total}total foi:`)
 </script>
