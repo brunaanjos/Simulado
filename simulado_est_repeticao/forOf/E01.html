@@ -7,13 +7,20 @@
     Apresente também qual o maior preço do Kg do Arroz e o menor preço do Kg do Arroz.
     */
 
-    //ENTRADA
+  
+let precoKgArroz = [3.90, 4.80, 5.75, 6.99, 7.00, 4.99, 5.19];
+
+   
+let soma = 0;
+for(preco of precoKgArroz){
+soma = soma + preco;
+}
+  const media = soma / precoKgArroz.length;  
+const maior = precoKgArroz.sort((a,b) => b - a)[0];
+const menor = precoKgArroz.sort((a,b) => a - b)[0];
 
 
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
-
+document.write(`A média do preço do Kg do Arroz é R$ ${media.toFixed(2)}</br>`);
+document.write(`O arroz mais caro custa R$ ${maior.toFixed(2)}</br>`);
+document.write(`O arroz mais barato custa R$ ${menor.toFixed(2)}</br>`);
 </script>
